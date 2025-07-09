@@ -1,27 +1,28 @@
 # Credit-Card-Fraud Detection
 
-This project aims to detect fraudulent credit card transactions using various machine learning and deep learning models. It utilizes a publicly available dataset (from Kaggle) containing anonymized transaction features processed via PCA.
+This project aims to detect fraudulent credit card transactions using various machine learning and deep learning models. It utilizes a publicly available dataset (from [Kaggle](https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models)) containing anonymized transaction features processed via 28 PCA's.
 
 ---
 
 ## Summary
 
-Credit card fraud poses significant risks to financial institutions and customers. This project applies multiple classification techniques to accurately identify fraudulent transactions in highly imbalanced data.
+Credit card fraud poses significant risks to financial institutions and customers. 
+This project applies multiple classification techniques to accurately identify fraudulent transactions in highly imbalanced data.
 
 Key highlights:
 - Applied extensive **Exploratory Data Analysis (EDA)**
-- Compared models on **raw** and **normalized** data
-- Addressed data imbalance using **SMOTE**
-- Built a **PyTorch-based neural network**
-- Evaluated with metrics like **ROC-AUC**, **F1-score**, and **Recall**
+- Compared models on **raw** and **normalized** data wrt to Time/Amount
+- Addressed data imbalance using **SMOTE** for better spread of imbalanced data
+- Built a **PyTorch-based neural network** with sigmoid function binary classification
+- Evaluated with metrics like **ROC-AUC**, **F1-score**, and **Recall** for all models.
 
 ---
 
 ##  Features
-
- Clean and modular code structure  
- Preprocessing pipeline with PCA-aware normalization  
+ No need for Normalisation as the Data itself is PCA's of Big Data.
  SMOTE oversampling to handle class imbalance  
+ Raw data is Unnormalised Amount
+ 
  Multiple models implemented:
 - Logistic Regression
 - Random Forest
@@ -78,9 +79,9 @@ Metrics reporting using:
 
 ###  Neural Network Using Pytorch
 -  Weighted `BCELoss` for imbalance
--  Dropout` & `BatchNorm` to prevent overfitting
+-  `Dropout` & `BatchNorm` to prevent overfitting
 -  Threshold tuning using Precision-Recall Curve
--  Tuned layers and neurons
+-  Tuned layers = `3` and neurons = `129`
 
 
 
