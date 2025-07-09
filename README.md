@@ -50,7 +50,40 @@ Metrics reporting using:
 | XGBoost            | 0.983   | 0.82     | 0.85   | 0.79      |
 | Neural Network     | 0.935+ | 0.72     | 0.87   | 0.62      |
 
-# Optimisations in Three Complex models
+# Optimisations in Three Complex Models
+## 📊 Model Performance
+
+| Model               | ROC-AUC | F1 Score | Recall | Precision |
+|--------------------|---------|----------|--------|-----------|
+| Logistic Regression| 0.970   | 0.11     | 0.92   | 0.06      |
+| Random Forest      | 0.964   | 0.83     | 0.83   | 0.83      |
+| KNN                | 0.954   | 0.61     | 0.88   | 0.46      |
+| XGBoost            | 0.983   | 0.82     | 0.85   | 0.79      |
+| Neural Network     | ~0.935  | 0.72     | 0.87   | 0.62      |
+| SVM                | TBD     | TBD      | TBD    | TBD       |
+
+---
+
+## ⚙️ Optimizations Applied per Model
+
+
+###  Random Forest
+-  `class_weight='balanced'`
+-  `GridSearchCV` on `n_estimators`, `max_depth`, `min_samples_split`
+
+###  XGBoost
+
+- `scale_pos_weight` for imbalance handling
+- `GridSearchCV` for `max_depth`, `n_estimators`, `learning_rate`
+
+###  Neural Network Using Pytorch
+-  Weighted `BCELoss` for imbalance
+-  Dropout` & `BatchNorm` to prevent overfitting
+-  Threshold tuning using Precision-Recall Curve
+-  Tuned layers and neurons
+
+
+
 
 
 ---
