@@ -19,7 +19,9 @@ Key highlights:
 ---
 
 ##  Features
- No need for Normalisation as the Data itself is PCA's of Big Data.
+A database of a European cardholder company shared its 2-day normalised data.
+The total percentage of fraud in 2 days is 0.17 out of 200K+ transactions.
+No need for Normalisation as the Data itself is PCA's of Big Data.
  SMOTE oversampling to handle class imbalance  
  Raw data is Unnormalised Amount
  
@@ -46,22 +48,19 @@ Metrics reporting using:
 | Model               | ROC-AUC | F1 Score | Recall | Precision |
 |--------------------|---------|----------|--------|-----------|
 | Logistic Regression| 0.970   | 0.11     | 0.92   | 0.06      |
-| Random Forest      | 0.964   | 0.83     | 0.83   | 0.83      |
+| Random Forest      | 0.926  | 0.83     | 0.83   | 0.83      |
 | KNN                | 0.954   | 0.61     | 0.88   | 0.46      |
-| XGBoost            | 0.983   | 0.82     | 0.85   | 0.79      |
-| Neural Network     | 0.935+ | 0.72     | 0.87   | 0.62      |
+| XGBoost            | 0.933   | 0.82     | 0.85   | 0.79      |
+| Neural Network     | 0.935 | 0.72     | 0.87   | 0.62      |
 
 # Optimisations in Three Complex Models
 ## 📊 Model Performance
 
-| Model               | ROC-AUC | F1 Score | Recall | Precision |
-|--------------------|---------|----------|--------|-----------|
-| Logistic Regression| 0.970   | 0.11     | 0.92   | 0.06      |
-| Random Forest      | 0.964   | 0.83     | 0.83   | 0.83      |
-| KNN                | 0.954   | 0.61     | 0.88   | 0.46      |
-| XGBoost            | 0.983   | 0.82     | 0.85   | 0.79      |
-| Neural Network     | ~0.935  | 0.72     | 0.87   | 0.62      |
-| SVM                | TBD     | TBD      | TBD    | TBD       |
+| Model               | Accuracy | ROC-AUC | F1 Score | Recall | Precision |
+|--------------------|----------|---------|----------|--------|-----------|
+| Random Forest      | 1.00     | 0.964   | 0.83     | 0.83   | 0.83      |
+| XGBoost            | 1.00     | 0.982   | 0.79     | 0.87   | 0.72      |
+| Neural Network     | 1.00     | 0.974   | 0.75     | 0.87   | 0.66     |
 
 ---
 
