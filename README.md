@@ -83,7 +83,7 @@ Metrics reporting using:
 -  Threshold tuning using Precision-Recall Curve
 -  Tuned layers = `3` and neurons = `129`
 
-##Results:
+### Results:
 Achieved high detection performance:
   - Neural Net: **F1 = 0.75**, **ROC-AUC = 0.974**
   -  XGBoost: **F1 = 0.79**, **ROC-AUC = 0.982**
