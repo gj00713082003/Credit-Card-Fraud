@@ -65,7 +65,7 @@ Metrics reporting using:
 
 ---
 
-## ⚙️ Optimizations Applied per Model
+##  Optimizations Applied per Model
 
 
 ###  Random Forest
