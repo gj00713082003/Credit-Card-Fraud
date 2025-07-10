@@ -13,7 +13,7 @@ Key highlights:
 - Applied extensive **Exploratory Data Analysis (EDA)**
 - Compared models on **raw** and **normalized** data wrt to Time/Amount
 - Addressed data imbalance using **SMOTE** for better spread of imbalanced data
-- Built a **PyTorch-based neural network** with sigmoid function binary classification
+- Built a **PyTorch-based neural network** with a sigmoid function for binary classification
 - Evaluated with metrics like **ROC-AUC**, **F1-score**, and **Recall** for all models.
 
 ---
@@ -54,7 +54,8 @@ Metrics reporting using:
 | Neural Network     | 0.935 | 0.72     | 0.87   | 0.62      |
 
 # Optimisations in Three Complex Models
-## 📊 Model Performance
+
+##  Model Performance after Optimization
 
 | Model               | Accuracy | ROC-AUC | F1 Score | Recall | Precision |
 |--------------------|----------|---------|----------|--------|-----------|
@@ -82,9 +83,10 @@ Metrics reporting using:
 -  Threshold tuning using Precision-Recall Curve
 -  Tuned layers = `3` and neurons = `129`
 
-
-
-
-
+##Results:
+Achieved high detection performance:
+  - Neural Net: **F1 = 0.75**, **ROC-AUC = 0.974**
+  -  XGBoost: **F1 = 0.79**, **ROC-AUC = 0.982**
+  -  Random Forest: **F1 = 0.83**, **ROC-AUC = 0.964**
 ---
 
